@@ -1,5 +1,4 @@
 ﻿using System;
-using JAA.CameraLogic;
 using JAA.Structure;
 using JAA.Services.Input;
 using UnityEngine;
@@ -22,7 +21,6 @@ namespace JAA.Hero
         private void Start()
         {
             _camera = Camera.main;
-            CameraFollow();
         }
 
         private void Update()
@@ -42,7 +40,5 @@ namespace JAA.Hero
             
             _characterController.Move(_movementSpeed * movementVector * Time.deltaTime);
         }
-
-        private void CameraFollow() => _camera.GetComponent<CameraFollow>().Follow(gameObject);
     }
 }

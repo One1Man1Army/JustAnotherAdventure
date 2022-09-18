@@ -1,3 +1,4 @@
+using JAA.Logic;
 using JAA.Services.Input;
 
 namespace JAA.Structure
@@ -7,9 +8,9 @@ namespace JAA.Structure
         public static IInputService InputService;
         public GameStateMachine stateMachine;
 
-        public Game()
+        public Game(ICoroutineRunner coroutineRunner, LoadingCurtain loadingCurtain)
         {
-            stateMachine = new GameStateMachine();
+            stateMachine = new GameStateMachine(new SceneLoader(coroutineRunner), loadingCurtain);
         }
     }
 }
