@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace JAA.CameraLogic
+namespace JAA.Structure.StateMachine.CameraLogic
 {
     public class CameraFollow : MonoBehaviour
     {

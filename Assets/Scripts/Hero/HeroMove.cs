@@ -1,10 +1,11 @@
 ﻿using System;
 using JAA.Structure;
-using JAA.Services.Input;
+using JAA.Structure.Services;
+using JAA.Structure.StateMachine.Services.Input;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace JAA.Hero
+namespace JAA.Structure.StateMachine.Hero
 {
     public class HeroMove : MonoBehaviour
     {
@@ -15,7 +16,7 @@ namespace JAA.Hero
 
         private void Awake()
         {
-            _inputService = Game.InputService;
+            _inputService = AllServices.Container.Single<IInputService>();
         }
 
         private void Start()

@@ -1,4 +1,4 @@
-namespace JAA.Logic
+namespace JAA.Structure.StateMachine.Logic
 {
 	public interface IAnimationStateReader
 	{

@@ -1,4 +1,4 @@
-namespace JAA
+namespace JAA.Structure
 {
 	public static class Constants
 	{

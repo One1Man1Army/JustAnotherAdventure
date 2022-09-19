@@ -1,9 +1,9 @@
 using System;
-using JAA.Logic;
+using JAA.Structure.StateMachine.Logic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace JAA.Hero
+namespace JAA.Structure.StateMachine.Hero
 {
 	public class HeroAnimator : MonoBehaviour, IAnimationStateReader
 	{

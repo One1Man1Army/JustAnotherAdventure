@@ -1,4 +1,4 @@
-namespace JAA.Structure
+namespace JAA.Structure.StateMachine
 {
 	public interface IState : IExitableState
 	{

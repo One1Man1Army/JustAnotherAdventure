@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace JAA.Logic
+namespace JAA.Structure.StateMachine.Logic
 {
 	public class AnimatorStateReporter : StateMachineBehaviour
 	{

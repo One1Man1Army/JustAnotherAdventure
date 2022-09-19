@@ -1,10 +1,9 @@
-using System;
-using JAA.CameraLogic;
-using JAA.Logic;
+using JAA.Structure.Factory;
+using JAA.Structure.StateMachine.CameraLogic;
+using JAA.Structure.StateMachine.Logic;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
-namespace JAA.Structure
+namespace JAA.Structure.StateMachine
 {
 	public class LoadLevelState : IPayloadedState<string>
 	{
@@ -15,11 +14,12 @@ namespace JAA.Structure
 		private readonly LoadingCurtain _loadingCurtain;
 		private readonly IGameFactory _gameFactory;
 
-		public LoadLevelState(GameStateMachine stateMachine, SceneLoader sceneLoader, LoadingCurtain loadingCurtain)
+		public LoadLevelState(GameStateMachine stateMachine, SceneLoader sceneLoader, LoadingCurtain loadingCurtain, IGameFactory gameFactory)
 		{
 			_stateMachine = stateMachine;
 			_sceneLoader = sceneLoader;
 			_loadingCurtain = loadingCurtain;
+			_gameFactory = gameFactory;
 		}
 
 		public void Enter(string sceneName)

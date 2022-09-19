@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace JAA.Services.Input
+namespace JAA.Structure.StateMachine.Services.Input
 {
     public abstract class InputService : IInputService
     {

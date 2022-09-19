@@ -1,7 +1,7 @@
 using JAA.Structure.AssetManagement;
 using UnityEngine;
 
-namespace JAA.Structure
+namespace JAA.Structure.Factory
 {
 	public class GameFactory : IGameFactory
 	{

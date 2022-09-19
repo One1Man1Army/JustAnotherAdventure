@@ -1,4 +1,5 @@
-﻿using JAA.Logic;
+﻿using JAA.Structure.StateMachine;
+using JAA.Structure.StateMachine.Logic;
 using UnityEngine;
 
 namespace JAA.Structure
