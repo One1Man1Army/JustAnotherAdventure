@@ -9,12 +9,11 @@ namespace JAA.Structure
 	public class LoadLevelState : IPayloadedState<string>
 	{
 		private const string InitialPointTag = "InitialPoint";
-		private const string HeroPath = "Hero/Hero";
-		private const string HudPath = "Hud/Hud";
-		
+
 		private readonly GameStateMachine _stateMachine;
 		private readonly SceneLoader _sceneLoader;
 		private readonly LoadingCurtain _loadingCurtain;
+		private readonly IGameFactory _gameFactory;
 
 		public LoadLevelState(GameStateMachine stateMachine, SceneLoader sceneLoader, LoadingCurtain loadingCurtain)
 		{
@@ -31,27 +30,14 @@ namespace JAA.Structure
 
 		private void OnLoaded()
 		{
-			var initialPoint = GameObject.FindWithTag(InitialPointTag);
-			var hero = Instantiate(HeroPath, initialPoint.transform.position);
+			var hero = _gameFactory.CreateHero(GameObject.FindWithTag(InitialPointTag));
 			CameraFollow(hero);
 			
-			Instantiate(HudPath);
-			
+			_gameFactory.CreateHud();
+
 			_stateMachine.Enter<GameLoopState>();
 		}
 
-		private static GameObject Instantiate(string path)
-		{
-			var prefab = Resources.Load<GameObject>(path);
-			return Object.Instantiate(prefab);
-		}
-		
-		private static GameObject Instantiate(string path, Vector3 at)
-		{
-			var prefab = Resources.Load<GameObject>(path);
-			return Object.Instantiate(prefab, at, Quaternion.identity);
-		}
-		
 		private void CameraFollow(GameObject hero) 
 			=> Camera.main.GetComponent<CameraFollow>().Follow(hero);
 
