@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using JAA.Structure.Factory;
 using JAA.Services;
 using JAA.Logic;
+using JAA.Services.PersistentProgress;
+using JAA.Services.SaveLoad;
 
 namespace JAA.Structure.StateMachine
 {
@@ -16,6 +18,7 @@ namespace JAA.Structure.StateMachine
 			_states = new Dictionary<Type, IExitableState>
 			{
 				[typeof(BootstrapState)] = new BootstrapState(this, sceneLoader, services),
+				[typeof(LoadProgressState)] = new LoadProgressState(this, services.Single<IPersistentProgressService>(), services.Single<ISaveLoadService>()),
 				[typeof(LoadLevelState)] = new LoadLevelState(this, sceneLoader, loadingCurtain, services.Single<IGameFactory>()),
 				[typeof(GameLoopState)] = new GameLoopState(this)
 			};

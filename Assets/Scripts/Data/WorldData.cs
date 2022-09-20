@@ -5,6 +5,6 @@ namespace JAA.Data
 	[Serializable]
 	public class WorldData
 	{
-		public Vector3Data position;
+		public PositionOnLevel positionOnLevel;
 	}
 }

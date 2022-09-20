@@ -5,6 +5,7 @@ using JAA.Services;
 using JAA.Services.Input;
 using JAA.Services.PersistentProgress;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 namespace JAA.Hero
@@ -18,13 +19,28 @@ namespace JAA.Hero
         
         public void LoadProgress(PlayerProgress progress)
         {
-            throw new NotImplementedException();
+            if (CurrentLevel() != progress.worldData.positionOnLevel.level) return;
+            
+            var savedPosition = progress.worldData.positionOnLevel.position;
+            if (savedPosition != null)
+                Warp(savedPosition);
+        }
+
+        private void Warp(Vector3Data to)
+        {
+            _characterController.enabled = false;
+            transform.position = to.AsUnityVector();
+            _characterController.enabled = true;
         }
 
         public void UpdateProgress(PlayerProgress progress)
         {
-            progress.worldData.position = transform.position.AsVectorData();
+            progress.worldData.positionOnLevel =
+                new PositionOnLevel(CurrentLevel(), transform.position.AsVectorData());
         }
+
+        private static string CurrentLevel() =>
+            SceneManager.GetActiveScene().name;
 
         private void Awake()
         {
