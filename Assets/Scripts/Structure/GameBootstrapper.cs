@@ -1,5 +1,5 @@
 ﻿using JAA.Structure.StateMachine;
-using JAA.Structure.StateMachine.Logic;
+using JAA.Logic;
 using UnityEngine;
 
 namespace JAA.Structure

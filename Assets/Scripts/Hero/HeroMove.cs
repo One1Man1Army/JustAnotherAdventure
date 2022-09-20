@@ -1,18 +1,30 @@
 ﻿using System;
+using JAA.Data;
 using JAA.Structure;
-using JAA.Structure.Services;
-using JAA.Structure.StateMachine.Services.Input;
+using JAA.Services;
+using JAA.Services.Input;
+using JAA.Services.PersistentProgress;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace JAA.Structure.StateMachine.Hero
+namespace JAA.Hero
 {
-    public class HeroMove : MonoBehaviour
+    public class HeroMove : MonoBehaviour, ISavedProgress
     {
         [SerializeField] private CharacterController _characterController;
         [SerializeField] private float _movementSpeed = 4.0f;
         private IInputService _inputService;
         private Camera _camera;
+        
+        public void LoadProgress(PlayerProgress progress)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateProgress(PlayerProgress progress)
+        {
+            progress.worldData.position = transform.position.AsVectorData();
+        }
 
         private void Awake()
         {

@@ -1,8 +1,7 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace JAA.Structure.StateMachine.Logic
+namespace JAA.Logic
 {
   public class LoadingCurtain : MonoBehaviour
   {

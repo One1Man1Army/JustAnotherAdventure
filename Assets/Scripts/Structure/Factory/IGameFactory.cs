@@ -1,4 +1,4 @@
-using JAA.Structure.Services;
+using JAA.Services;
 using UnityEngine;
 
 namespace JAA.Structure.Factory

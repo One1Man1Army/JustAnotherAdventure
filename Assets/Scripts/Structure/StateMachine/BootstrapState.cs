@@ -1,7 +1,8 @@
 using JAA.Structure.AssetManagement;
 using JAA.Structure.Factory;
-using JAA.Structure.Services;
-using JAA.Structure.StateMachine.Services.Input;
+using JAA.Services;
+using JAA.Services.Input;
+using JAA.Services.PersistentProgress;
 using UnityEngine;
 
 namespace JAA.Structure.StateMachine
@@ -42,6 +43,7 @@ namespace JAA.Structure.StateMachine
 		{
 			_services.RegisterSingle<IInputService>(InputService());
 			_services.RegisterSingle<IAssetProvider>(new AssetProvider());
+			_services.RegisterSingle<IPersistentProgressService>(new PersistentProgressService());
 			_services.RegisterSingle<IGameFactory>(new GameFactory(_services.Single<IAssetProvider>()));
 		}
 

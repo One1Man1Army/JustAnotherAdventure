@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using JAA.Structure.Factory;
-using JAA.Structure.Services;
-using JAA.Structure.StateMachine.Logic;
+using JAA.Services;
+using JAA.Logic;
 
 namespace JAA.Structure.StateMachine
 {

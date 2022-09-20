@@ -1,6 +1,6 @@
 using JAA.Structure.Factory;
 
-namespace JAA.Structure.Services
+namespace JAA.Services
 {
 	public class AllServices
 	{

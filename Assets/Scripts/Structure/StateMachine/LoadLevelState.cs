@@ -1,6 +1,6 @@
 using JAA.Structure.Factory;
-using JAA.Structure.StateMachine.CameraLogic;
-using JAA.Structure.StateMachine.Logic;
+using JAA.CameraLogic;
+using JAA.Logic;
 using UnityEngine;
 
 namespace JAA.Structure.StateMachine

@@ -1,7 +1,6 @@
-using JAA.Structure.Services;
+using JAA.Services;
 using JAA.Structure.StateMachine;
-using JAA.Structure.StateMachine.Logic;
-using JAA.Structure.StateMachine.Services.Input;
+using JAA.Logic;
 
 namespace JAA.Structure
 {

@@ -1,7 +1,7 @@
-using JAA.Structure.Services;
+using JAA.Services;
 using UnityEngine;
 
-namespace JAA.Structure.StateMachine.Services.Input
+namespace JAA.Services.Input
 {
     public interface IInputService : IService
     {

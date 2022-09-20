@@ -1,4 +1,4 @@
-namespace JAA.Structure.Services
+namespace JAA.Services
 {
 	public interface IService
 	{

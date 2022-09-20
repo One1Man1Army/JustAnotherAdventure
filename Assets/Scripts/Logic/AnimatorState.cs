@@ -1,4 +1,4 @@
-namespace JAA.Structure.StateMachine.Logic
+namespace JAA.Logic
 {
 	public enum AnimatorState
 	{
