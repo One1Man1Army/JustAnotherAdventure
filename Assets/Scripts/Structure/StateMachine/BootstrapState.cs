@@ -3,6 +3,7 @@ using JAA.Structure.Factory;
 using JAA.Services;
 using JAA.Services.Input;
 using JAA.Services.PersistentProgress;
+using JAA.Services.SaveLoad;
 using UnityEngine;
 
 namespace JAA.Structure.StateMachine
@@ -36,7 +37,7 @@ namespace JAA.Structure.StateMachine
 
 		private void EnterLoadLevel()
 		{
-			_stateMachine.Enter<LoadLevelState, string>("Main");
+			_stateMachine.Enter<LoadProgressState>();
 		}
 
 		private void RegisterServices()
@@ -45,6 +46,7 @@ namespace JAA.Structure.StateMachine
 			_services.RegisterSingle<IAssetProvider>(new AssetProvider());
 			_services.RegisterSingle<IPersistentProgressService>(new PersistentProgressService());
 			_services.RegisterSingle<IGameFactory>(new GameFactory(_services.Single<IAssetProvider>()));
+			_services.RegisterSingle<ISaveLoadService>(new SaveLoadService(_services.Single<IPersistentProgressService>(), _services.Single<IGameFactory>()));
 		}
 
 		private static IInputService InputService()

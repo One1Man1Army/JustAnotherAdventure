@@ -10,7 +10,7 @@ namespace JAA.Data
 
 		public PlayerProgress(string initialLevel)
 		{
-			
+			worldData = new WorldData(initialLevel);
 		}
 	}
 }

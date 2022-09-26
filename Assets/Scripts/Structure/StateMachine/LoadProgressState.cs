@@ -26,7 +26,7 @@ namespace JAA.Structure.StateMachine
 
 		public void Exit()
 		{
-			throw new NotImplementedException();
+			
 		}
 		
 		private void LoadProgressOrInitNew() => 

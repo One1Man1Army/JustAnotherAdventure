@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using JAA.Services;
+using JAA.Services.PersistentProgress;
 using UnityEngine;
 
 namespace JAA.Structure.Factory
@@ -7,5 +9,8 @@ namespace JAA.Structure.Factory
 	{
 		GameObject CreateHero(GameObject initialPoint);
 		void CreateHud();
+		List<ISavedProgressReader> ProgressReaders { get; }
+		List<ISavedProgress> ProgressWriters { get; }
+		void CleanUp();
 	}
 }

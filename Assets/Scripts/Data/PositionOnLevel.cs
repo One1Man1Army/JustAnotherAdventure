@@ -13,5 +13,10 @@ namespace JAA.Data
 			this.level = level;
 			this.position = position;
 		}
+
+		public PositionOnLevel(string initialLevel)
+		{
+			level = initialLevel;
+		}
 	}
 }

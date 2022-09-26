@@ -6,12 +6,12 @@ namespace JAA.Structure
 {
     public class GameBootstrapper : MonoBehaviour, ICoroutineRunner
     {
-        public LoadingCurtain curtain;
+        [SerializeField] private LoadingCurtain _curtainPrefab;
         private Game _game;
 
         private void Awake()
         {
-            _game = new Game(this, curtain);
+            _game = new Game(this, Instantiate(_curtainPrefab));
             _game.stateMachine.Enter<BootstrapState>();
             
             DontDestroyOnLoad(this);
