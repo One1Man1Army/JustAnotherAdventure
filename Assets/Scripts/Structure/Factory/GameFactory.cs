@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using JAA.Services.PersistentProgress;
 using JAA.Structure.AssetManagement;
@@ -16,8 +17,15 @@ namespace JAA.Structure.Factory
 		{
 			_assets = assets;
 		}
-		public GameObject CreateHero(GameObject initialPoint) =>
-			InstantiateRegistered(AssetPath.HeroPath, initialPoint.transform.position);
+		public GameObject CreateHero(GameObject initialPoint)
+		{
+			HeroObject = InstantiateRegistered(AssetPath.HeroPath, initialPoint.transform.position);
+			HeroCreated?.Invoke();
+			return HeroObject;
+		}
+
+		public GameObject HeroObject { get; private set; }
+		public event Action HeroCreated;
 
 		public void CreateHud() => 
 			InstantiateRegistered(AssetPath.HudPath);
