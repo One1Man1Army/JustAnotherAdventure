@@ -3,6 +3,7 @@ using JAA.Structure.Factory;
 using JAA.CameraLogic;
 using JAA.Logic;
 using JAA.Services.PersistentProgress;
+using JAA.Structure.UI;
 using UnityEngine;
 
 namespace JAA.Structure.StateMachine
@@ -57,7 +58,13 @@ namespace JAA.Structure.StateMachine
 		{
 			var hero = _gameFactory.CreateHero(GameObject.FindWithTag(InitialPointTag));
 			CameraFollow(hero);
-			_gameFactory.CreateHud();
+			InitHud(hero);
+		}
+
+		private void InitHud(GameObject hero)
+		{
+			GameObject hud = _gameFactory.CreateHud();
+			hud.GetComponentInChildren<ActorUI>().Construct(hero.GetComponent<HeroHealth>());
 		}
 
 		private void CameraFollow(GameObject hero) 

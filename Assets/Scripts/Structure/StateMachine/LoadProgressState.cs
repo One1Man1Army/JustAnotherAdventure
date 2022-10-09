@@ -32,7 +32,14 @@ namespace JAA.Structure.StateMachine
 		private void LoadProgressOrInitNew() => 
 			_progressService.progress = _saveLoadService.LoadProgress() ?? NewProgress();
 
-		private PlayerProgress NewProgress() => 
-			new PlayerProgress("Main");
+		private PlayerProgress NewProgress()
+		{
+			var progress = new PlayerProgress("Main");
+			
+			progress.heroState.maxHP = 50;
+			progress.heroState.ResetHP();
+			
+			return progress;
+		}
 	}
 }

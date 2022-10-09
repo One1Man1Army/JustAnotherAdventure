@@ -27,7 +27,7 @@ namespace JAA.Structure.Factory
 		public GameObject HeroObject { get; private set; }
 		public event Action HeroCreated;
 
-		public void CreateHud() => 
+		public GameObject CreateHud() => 
 			InstantiateRegistered(AssetPath.HudPath);
 
 		public void CleanUp()

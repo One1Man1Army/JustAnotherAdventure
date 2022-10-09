@@ -11,7 +11,7 @@ namespace JAA.Structure.Factory
 		GameObject CreateHero(GameObject initialPoint);
 		GameObject HeroObject { get; }
 		event Action HeroCreated;
-		void CreateHud();
+		GameObject CreateHud();
 		List<ISavedProgressReader> ProgressReaders { get; }
 		List<ISavedProgress> ProgressWriters { get; }
 		void CleanUp();

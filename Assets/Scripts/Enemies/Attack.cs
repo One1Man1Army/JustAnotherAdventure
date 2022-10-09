@@ -15,6 +15,7 @@ namespace JAA.Enemies
 		[SerializeField] private float _attackCooldown = 3f;
 		[SerializeField] private float _cleavage = 0.5f;
 		[SerializeField] private float _effectiveDistance = 0.5f;
+		[SerializeField] private float _damage = 10f;
 
 		private IGameFactory _factory;
 		private Transform _heroTransform;
@@ -48,6 +49,7 @@ namespace JAA.Enemies
 			if (Hit(out Collider hit))
 			{
 				PhysicsDebug.DrawDebug(CastPoint(), _cleavage, 1f);
+				hit.transform.GetComponent<HeroHealth>().TakeDamage(_damage);
 			}
 		}
 
