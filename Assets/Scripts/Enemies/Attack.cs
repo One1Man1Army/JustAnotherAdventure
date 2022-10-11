@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using JAA.Hero;
 using JAA.Services;
 using JAA.Structure.Factory;
 using UnityEngine;

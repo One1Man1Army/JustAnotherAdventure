@@ -1,55 +1,56 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using JAA.Data;
-using JAA.Hero;
 using JAA.Services.PersistentProgress;
 using UnityEngine;
 
-[RequireComponent(typeof(HeroAnimator))]
-public class HeroHealth : MonoBehaviour, ISavedProgress
+namespace JAA.Hero
 {
-	[SerializeField] private HeroAnimator _animator;
-	private HeroState _heroState;
-
-	public Action HealthChanged;
-
-	public float Max
+	[RequireComponent(typeof(HeroAnimator))]
+	public class HeroHealth : MonoBehaviour, ISavedProgress
 	{
-		get => _heroState.maxHP; 
-		set => _heroState.maxHP = value;
-	}
-	public float Current
-	{
-		get => _heroState.currentHP;
-		set
+		[SerializeField] private HeroAnimator _animator;
+		private HeroState _heroState;
+
+		public Action HealthChanged;
+
+		public float Max
 		{
-			if (_heroState.currentHP != value)
+			get => _heroState.maxHP;
+			set => _heroState.maxHP = value;
+		}
+
+		public float Current
+		{
+			get => _heroState.currentHP;
+			set
 			{
-				_heroState.currentHP = value;
-				HealthChanged?.Invoke();
+				if (_heroState.currentHP != value)
+				{
+					_heroState.currentHP = value;
+					HealthChanged?.Invoke();
+				}
 			}
 		}
-	}
 
-	public void LoadProgress(PlayerProgress progress)
-	{
-		_heroState = progress.heroState;
-		HealthChanged?.Invoke();
-	}
+		public void LoadProgress(PlayerProgress progress)
+		{
+			_heroState = progress.heroState;
+			HealthChanged?.Invoke();
+		}
 
-	public void UpdateProgress(PlayerProgress progress)
-	{
-		progress.heroState.currentHP = Current;
-		progress.heroState.maxHP = Max;
-	}
+		public void UpdateProgress(PlayerProgress progress)
+		{
+			progress.heroState.currentHP = Current;
+			progress.heroState.maxHP = Max;
+		}
 
-	public void TakeDamage(float damage)
-	{
-		if (Current <= 0)
-			return;
-		
-		Current -= damage;
-		_animator.PlayHit();
+		public void TakeDamage(float damage)
+		{
+			if (Current <= 0)
+				return;
+
+			Current -= damage;
+			_animator.PlayHit();
+		}
 	}
 }

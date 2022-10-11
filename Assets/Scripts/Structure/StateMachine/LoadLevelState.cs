@@ -1,9 +1,10 @@
 using System;
 using JAA.Structure.Factory;
 using JAA.CameraLogic;
+using JAA.Hero;
 using JAA.Logic;
 using JAA.Services.PersistentProgress;
-using JAA.Structure.UI;
+using JAA.UI;
 using UnityEngine;
 
 namespace JAA.Structure.StateMachine

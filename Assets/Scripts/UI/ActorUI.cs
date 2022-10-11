@@ -1,7 +1,8 @@
 using System;
+using JAA.Hero;
 using UnityEngine;
 
-namespace JAA.Structure.UI
+namespace JAA.UI
 {
 	public class ActorUI : MonoBehaviour
 	{

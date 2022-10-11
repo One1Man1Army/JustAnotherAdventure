@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HpBar : MonoBehaviour
+namespace JAA.UI
 {
-	[SerializeField] private Image _imageCurrent;
+	public class HpBar : MonoBehaviour
+	{
+		[SerializeField] private Image _imageCurrent;
 
-	public void SetValue(float current, float max) =>
-		_imageCurrent.fillAmount = current / max;
+		public void SetValue(float current, float max) =>
+			_imageCurrent.fillAmount = current / max;
+	}
 }
