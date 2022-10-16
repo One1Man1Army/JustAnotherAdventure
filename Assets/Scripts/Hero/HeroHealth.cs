@@ -1,23 +1,24 @@
 using System;
 using JAA.Data;
+using JAA.Logic;
 using JAA.Services.PersistentProgress;
 using UnityEngine;
 
 namespace JAA.Hero
 {
 	[RequireComponent(typeof(HeroAnimator))]
-	public class HeroHealth : MonoBehaviour, ISavedProgress
+	public class HeroHealth : MonoBehaviour, ISavedProgress, IHealth
 	{
 		[SerializeField] private HeroAnimator _animator;
 		private HeroState _heroState;
-
-		public Action HealthChanged;
 
 		public float Max
 		{
 			get => _heroState.maxHP;
 			set => _heroState.maxHP = value;
 		}
+
+		public event Action HealthChanged;
 
 		public float Current
 		{

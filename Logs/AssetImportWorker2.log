@@ -1,0 +1,574 @@
+Unity Editor version:    2021.3.9f1 (ad3870b89536)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.6 (Build 21G115)
+Darwin version:          21.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Users/johnwu/Data/UnityEditors/2021.3.9f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+/Users/johnwu/Data/Projects/JustAnotherAdventure
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+56531
+Successfully changed project path to: /Users/johnwu/Data/Projects/JustAnotherAdventure
+/Users/johnwu/Data/Projects/JustAnotherAdventure
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 41.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.9f1 (ad3870b89536)
+[Subsystems] Discovering subsystems at path /Users/johnwu/Data/UnityEditors/2021.3.9f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/johnwu/Data/Projects/JustAnotherAdventure/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Color LCD preferred device: Intel(R) UHD Graphics 630 (low power)
+Metal devices available: 2
+0: AMD Radeon Pro 5300M (high power)
+1: Intel(R) UHD Graphics 630 (low power)
+Using device AMD Radeon Pro 5300M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5300M
+Initialize mono
+Mono path[0] = '/Users/johnwu/Data/UnityEditors/2021.3.9f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Users/johnwu/Data/UnityEditors/2021.3.9f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Users/johnwu/Data/UnityEditors/2021.3.9f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56097
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Users/johnwu/Data/UnityEditors/2021.3.9f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Users/johnwu/Data/UnityEditors/2021.3.9f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.001779 seconds.
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 33.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.758 seconds
+Domain Reload Profiling:
+	ReloadAssembly (758ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (480ms)
+			LoadAssemblies (132ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (136ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (258ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (46ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (34ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (131ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000148 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.794 seconds
+Domain Reload Profiling:
+	ReloadAssembly (795ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (566ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (171ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (227ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (41ms)
+				ProcessInitializeOnLoadAttributes (137ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Users/johnwu/Data/UnityEditors/2021.3.9f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1256 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 15 unused Assets / (72.4 KB). Loaded Objects now: 1745.
+Memory consumption went from 141.9 MB to 141.8 MB.
+Total: 2.728926 ms (FindLiveObjects: 0.115453 ms CreateObjectMapping: 0.038626 ms MarkObjects: 2.460279 ms  DeleteObjects: 0.113925 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 187110.647796 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f89829c4e517764832a2f3b3ae4af264') in 0.286795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 134.439871 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c90b96bb4917cadb6035b22f7a65062') in 0.047526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.779303 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba0f40dcb1b1ef3048494dfb5aeffee4') in 0.034473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.929633 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78c2248bf54629a597bb7208d91738b7') in 0.037040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 66.115193 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a19370233553cc9b753286431eb0b4b9') in 0.035768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.709976 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e367266ee1decbcc77ecfa5c8157b590') in 0.035619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.123162 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45ef127554db066de44f0b603463abc4') in 0.035952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.929708 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '846dca29280c007aa1144afdd025fec2') in 0.034192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.679676 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9a327ee36745db385323843c4f6767') in 0.035550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.057165 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7d70c40e8071ff3036674f7aeb7fd68') in 0.033891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.540393 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff8c25e039ed1577bd5bdebb29d1aa65') in 0.040709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.784310 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a6b3bd18dedfcb26567cb4a0245ae8') in 0.069929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.518896 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c53b4acd122e178eaadc13c4e42ce9d6') in 0.032160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.353950 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba0c2e6ed22230594f99697181c1bf70') in 0.038264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.322925 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a17cc567101a72da4663a319e560d6dc') in 0.032836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.803235 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5769cb3888688b15c9b77e119da65d0') in 0.032568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.790306 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd1d3a2eb9d282169dcf7dec7403286d') in 0.033784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.594699 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36ed444c31194a1bd7bcdaff2d0e207b') in 0.033213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 70.529895 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe9f6e069227052f51be2fe5a87ee1d2') in 0.037866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.610775 seconds.
+  path: Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab
+  artifactKey: Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Enemies/Lich/Prefabs/Lich.prefab using Guid(274c4c35ed05ea14c87492064b3cadfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab630f1efd18b4049add52850fdb3d30') in 0.044656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.010395 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Shader/Bloom.cginc
+  artifactKey: Guid(1b8325918052c4c5492831d116e3ed27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Shader/Bloom.cginc using Guid(1b8325918052c4c5492831d116e3ed27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd495ada944deec7a821d5ffe7ec9e427') in 0.102128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/External Assets/Cartoon FX (legacy)/Materials/Light/CFX4_AuraBubble ADD.mat
+  artifactKey: Guid(b701c416ffd5db94eab6dbfe25b8247e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX (legacy)/Materials/Light/CFX4_AuraBubble ADD.mat using Guid(b701c416ffd5db94eab6dbfe25b8247e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '449e11fe96da42f7ad957f08a588d6a1') in 0.235942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr fire small anim blurred.png
+  artifactKey: Guid(7dd21a42fcbbb4d49b7ce998ddc61e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr fire small anim blurred.png using Guid(7dd21a42fcbbb4d49b7ce998ddc61e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdce5f25880b407d4442148a478d06e5') in 1.246864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme candle unstable hdr ab.mat
+  artifactKey: Guid(355ca83212eccc2478e699133aee2677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme candle unstable hdr ab.mat using Guid(355ca83212eccc2478e699133aee2677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4779c2950be0115179e6d053cc36664a') in 0.218159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/External Assets/Cartoon FX (legacy)/Textures/CFX_T_Bubble.png
+  artifactKey: Guid(fd5f77db0b1cae745bf2d8b8df194861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX (legacy)/Textures/CFX_T_Bubble.png using Guid(fd5f77db0b1cae745bf2d8b8df194861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc9eea9da5ea95712f966f6d6eb0c5e') in 0.010496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/External Assets/Cartoon FX (legacy)/Materials/Animated/CFX_Anim_Triangle2_AlphaBlendedPremult.mat
+  artifactKey: Guid(4d5a52cb18e09b843887aee389016b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX (legacy)/Materials/Animated/CFX_Anim_Triangle2_AlphaBlendedPremult.mat using Guid(4d5a52cb18e09b843887aee389016b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e60747cba5ff42bdeee46ca6e2ee1457') in 0.059279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/External Assets/Cartoon FX (legacy)/Materials/Misc/CFX_Bubble.mat
+  artifactKey: Guid(2656ffd617a68d949a7600cc66478917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX (legacy)/Materials/Misc/CFX_Bubble.mat using Guid(2656ffd617a68d949a7600cc66478917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945cc47adb149531480cef1318b8694b') in 0.016664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur unstable hdr ab.mat
+  artifactKey: Guid(173b6b1a6db432f44b3636e0ca19e4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur unstable hdr ab.mat using Guid(173b6b1a6db432f44b3636e0ca19e4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4557acf5caf814dc5f86d1dccb302bbf') in 0.009731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur mid fine hdr ab.mat
+  artifactKey: Guid(2925b559433ea934aa621370ff411a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur mid fine hdr ab.mat using Guid(2925b559433ea934aa621370ff411a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd92acbd3c9feb0589e0f44120729f6ad') in 0.012398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme crisp stable fine hdr ab.mat
+  artifactKey: Guid(ef64dc8784962734c8b0980d3aa7b21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme crisp stable fine hdr ab.mat using Guid(ef64dc8784962734c8b0980d3aa7b21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304cd32303afd51ef0bf27bb5bd35ed0') in 0.011637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr bubble ab.mat
+  artifactKey: Guid(b723f81f440998d42a4d4b393cac870c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr bubble ab.mat using Guid(b723f81f440998d42a4d4b393cac870c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d283e4266071843d14d5f821d2dee72') in 0.178505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/External Assets/Cartoon FX (legacy)/Textures/CFX4_T_BubbleSubtle A8.png
+  artifactKey: Guid(2b1e7eedd7ee0e84495e702c91bc240a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX (legacy)/Textures/CFX4_T_BubbleSubtle A8.png using Guid(2b1e7eedd7ee0e84495e702c91bc240a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18d52f434bd3fe53013a6933c253c22') in 0.058421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr bubble 2 ab.mat
+  artifactKey: Guid(21417cf5ab018164f9d28d2e35ad8cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr bubble 2 ab.mat using Guid(21417cf5ab018164f9d28d2e35ad8cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c53d380404726fd5479f605c1d5cf196') in 0.012625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/Demo Assets/UI/CFXR Demo Btn Bloom.png
+  artifactKey: Guid(07caf3d1930bab14aa8f6dcdf2db871a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/Demo Assets/UI/CFXR Demo Btn Bloom.png using Guid(07caf3d1930bab14aa8f6dcdf2db871a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a47226b2178dcd9bf2f25c0de08b7acc') in 0.030736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr bubble.png
+  artifactKey: Guid(c78c2071651a73d4db16ad0155af4dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr bubble.png using Guid(c78c2071651a73d4db16ad0155af4dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20601cd3fe6514034554e48eb2b76fb7') in 0.007933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme full blurred.png
+  artifactKey: Guid(2d890239defb33943a2d8b9ca0c3d474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme full blurred.png using Guid(2d890239defb33943a2d8b9ca0c3d474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e0b14f5349bdcfa61351feee864180d') in 0.007833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur stable fine hdr ab.mat
+  artifactKey: Guid(7a1909e1ac5325d4584311708230d0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur stable fine hdr ab.mat using Guid(7a1909e1ac5325d4584311708230d0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '394a9577eea154b5189c50a6e31dae3f') in 0.015137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/External Assets/Cartoon FX (legacy)/Textures/CFX_T_Anim4_Bubble.png
+  artifactKey: Guid(12d6e56bbf4ac7a419ac250680dfae07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX (legacy)/Textures/CFX_T_Anim4_Bubble.png using Guid(12d6e56bbf4ac7a419ac250680dfae07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4493743f9abe12a21350efb407ea66c') in 0.011720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur stable hdr ab.mat
+  artifactKey: Guid(813a3e7e863a760429b02e9070a41e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur stable hdr ab.mat using Guid(813a3e7e863a760429b02e9070a41e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56403c43d7d90b5d47abcd6d91020fca') in 0.009781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme crisp unstable fine hdr ab.mat
+  artifactKey: Guid(e046315f6ccc43746abef96249d6e977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme crisp unstable fine hdr ab.mat using Guid(e046315f6ccc43746abef96249d6e977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7c9436e96d929686bb78f980175e91d') in 0.009787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr fire circle blur hdr ab.mat
+  artifactKey: Guid(92f497a3f1c7b5d49ad1b2854dd5d2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr fire circle blur hdr ab.mat using Guid(92f497a3f1c7b5d49ad1b2854dd5d2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243461b05304c7e0d72b73aa2cffe194') in 0.077116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr ember blur hdr ab.mat
+  artifactKey: Guid(6cd2d08f4a4d93542aa0004bdac91566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr ember blur hdr ab.mat using Guid(6cd2d08f4a4d93542aa0004bdac91566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd726390695b5f5397b5c93a62aef5221') in 0.181439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr fire small anim blurred hdr ab.mat
+  artifactKey: Guid(9fd7b93f5b2bb4340b23ceb8bf5f8ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr fire small anim blurred hdr ab.mat using Guid(9fd7b93f5b2bb4340b23ceb8bf5f8ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f56881d78727f32fa4eade7fed4cc39') in 0.008743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme plain stable fine hdr ab.mat
+  artifactKey: Guid(b30794e932b29df4a9627af9df89645a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme plain stable fine hdr ab.mat using Guid(b30794e932b29df4a9627af9df89645a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6944dfc1f9a9d933b6d6503fff7e5f9b') in 0.012933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur.png
+  artifactKey: Guid(f5ec3d9d039e8204d8b72ffc3ba810a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur.png using Guid(f5ec3d9d039e8204d8b72ffc3ba810a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc6e88e06e62f241700c9cfc9e85d64d') in 0.012458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur unstable fine hdr ab.mat
+  artifactKey: Guid(832254a1e17e6d242922c401632ff9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr flamme blur unstable fine hdr ab.mat using Guid(832254a1e17e6d242922c401632ff9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392d2d47c00c9cfd90e4e32c7a038b75') in 0.009773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/External Assets/Cartoon FX (legacy)/Textures/CFX2_T_Blood_AB.tga
+  artifactKey: Guid(9c8240b5c6ffd404dadb82f7b6f2cbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX (legacy)/Textures/CFX2_T_Blood_AB.tga using Guid(9c8240b5c6ffd404dadb82f7b6f2cbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dee34563f8a310f5112902383049dcf5') in 0.104942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr fire circle blur.png
+  artifactKey: Guid(5e0f8dcfc1b16c849ac880e3cd107176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr fire circle blur.png using Guid(5e0f8dcfc1b16c849ac880e3cd107176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05083d985018c95f965bf255f5ef923c') in 0.006932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr blood.png
+  artifactKey: Guid(a29f55dbea218ca4fbd94deb36027aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr blood.png using Guid(a29f55dbea218ca4fbd94deb36027aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7317a5f2811921a69e4be60c0ea795cd') in 0.011530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr fire circle drawn blurred.png
+  artifactKey: Guid(232ec32264aa04142ba34374d9989110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr fire circle drawn blurred.png using Guid(232ec32264aa04142ba34374d9989110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd44bb789dbe3bcd247798580fe4d03ed') in 0.006876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr fire full blurred fade hdr add.mat
+  artifactKey: Guid(3057ceabfc760ef45ba602a86f46bbe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr fire full blurred fade hdr add.mat using Guid(3057ceabfc760ef45ba602a86f46bbe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8961e4e8f51e869b08c84d0ec25b85f5') in 0.159890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 145.543127 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr line loop electric.png
+  artifactKey: Guid(24be193b88e84e042a08eab09c47f3c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr line loop electric.png using Guid(24be193b88e84e042a08eab09c47f3c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb65f132f1e4f5a0487365dd97181d8') in 0.009628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr line loop electric hdr ab.mat
+  artifactKey: Guid(75be7a7b742586840beb0b9c8ce4b273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr line loop electric hdr ab.mat using Guid(75be7a7b742586840beb0b9c8ce4b273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0070aeb3bbad0210b077cba18eb40ee') in 0.061536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Resources/Levels/Graveyard/raw/Materials/floor_14.mat
+  artifactKey: Guid(993bf4bf31ca32d448f977328ae65663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Graveyard/raw/Materials/floor_14.mat using Guid(993bf4bf31ca32d448f977328ae65663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cb82e5fee8022726b0fd1c35c3bdf44') in 0.088605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Prefabs/Liquids/CFXR4 Bubbles Breath Underwater Loop.prefab
+  artifactKey: Guid(7f906c77905876d488e88e99d13c3d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Prefabs/Liquids/CFXR4 Bubbles Breath Underwater Loop.prefab using Guid(7f906c77905876d488e88e99d13c3d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89614594c6dd9880c5b47be9a6d6831') in 0.017342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef
+  artifactKey: Guid(cd0a5c04eb538be45bab7f699da24bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef using Guid(cd0a5c04eb538be45bab7f699da24bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77294d1aebe64018501ff9155e9bcd4e') in 0.100639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR2 Shiny Item (Loop).prefab
+  artifactKey: Guid(e2c1ac940434a5242b54d72b66654687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR2 Shiny Item (Loop).prefab using Guid(e2c1ac940434a5242b54d72b66654687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ba372d050557c942c0e120437d759f') in 0.415626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/External Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef
+  artifactKey: Guid(fb9ff7b799c73af479a69874581439d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef using Guid(fb9ff7b799c73af479a69874581439d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a10d956f26bef4926c607d5bb8973b6') in 0.001526 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000205 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.770 seconds
+Domain Reload Profiling:
+	ReloadAssembly (770ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (538ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (163ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (212ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (128ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1232 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4 unused Assets / (72.3 KB). Loaded Objects now: 1801.
+Memory consumption went from 182.9 MB to 182.9 MB.
+Total: 2.496718 ms (FindLiveObjects: 0.119363 ms CreateObjectMapping: 0.051807 ms MarkObjects: 2.243893 ms  DeleteObjects: 0.081077 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting

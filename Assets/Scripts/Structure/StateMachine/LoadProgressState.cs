@@ -38,6 +38,8 @@ namespace JAA.Structure.StateMachine
 			
 			progress.heroState.maxHP = 50;
 			progress.heroState.ResetHP();
+			progress.heroStats.damage = 1f;
+			progress.heroStats.damageRadius = 0.5f;
 			
 			return progress;
 		}

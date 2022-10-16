@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using JAA.Hero;
+using JAA.Logic;
 using JAA.Services;
 using JAA.Structure.Factory;
 using UnityEngine;
@@ -50,7 +51,7 @@ namespace JAA.Enemies
 			if (Hit(out Collider hit))
 			{
 				PhysicsDebug.DrawDebug(CastPoint(), _cleavage, 1f);
-				hit.transform.GetComponent<HeroHealth>().TakeDamage(_damage);
+				hit.transform.GetComponent<IHealth>().TakeDamage(_damage);
 			}
 		}
 

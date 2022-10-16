@@ -65,7 +65,7 @@ namespace JAA.Structure.StateMachine
 		private void InitHud(GameObject hero)
 		{
 			GameObject hud = _gameFactory.CreateHud();
-			hud.GetComponentInChildren<ActorUI>().Construct(hero.GetComponent<HeroHealth>());
+			hud.GetComponentInChildren<ActorUI>().Construct(hero.GetComponent<IHealth>());
 		}
 
 		private void CameraFollow(GameObject hero) 

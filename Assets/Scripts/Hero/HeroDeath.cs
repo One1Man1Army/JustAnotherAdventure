@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using JAA.Data;
+using JAA.Services.PersistentProgress;
 using UnityEngine;
 
 namespace JAA.Hero
@@ -10,6 +12,7 @@ namespace JAA.Hero
     {
         [SerializeField] private HeroHealth _heroHealth;
         [SerializeField] private HeroMove _heroMove;
+        [SerializeField] private HeroAttack _heroAttack;
         [SerializeField] private HeroAnimator _animator;
         [SerializeField] private GameObject _deathFX;
         private bool _isDead;
@@ -27,6 +30,7 @@ namespace JAA.Hero
         {
             _isDead = true;
             _heroMove.enabled = false;
+            _heroAttack.enabled = false;
             _animator.PlayDeath();
             Instantiate(_deathFX, transform.position, Quaternion.identity);
         }
