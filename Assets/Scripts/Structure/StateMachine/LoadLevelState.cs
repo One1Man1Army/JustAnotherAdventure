@@ -12,6 +12,7 @@ namespace JAA.Structure.StateMachine
 	public class LoadLevelState : IPayloadedState<string>
 	{
 		private const string InitialPointTag = "InitialPoint";
+		private const string EnemySpawnerTag = "EnemySpawner";
 
 		private readonly GameStateMachine _stateMachine;
 		private readonly SceneLoader _sceneLoader;
@@ -57,9 +58,19 @@ namespace JAA.Structure.StateMachine
 
 		private void InitGameWorld()
 		{
+			InitSpawners();
 			var hero = _gameFactory.CreateHero(GameObject.FindWithTag(InitialPointTag));
 			CameraFollow(hero);
 			InitHud(hero);
+		}
+
+		private void InitSpawners()
+		{
+			foreach (var spawner in GameObject.FindGameObjectsWithTag(EnemySpawnerTag))
+			{
+				var enemySpawner = spawner.GetComponent<EnemySpawner>();
+				_gameFactory.Register(enemySpawner);
+			}
 		}
 
 		private void InitHud(GameObject hero)

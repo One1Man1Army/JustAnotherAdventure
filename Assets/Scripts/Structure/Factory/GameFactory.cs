@@ -56,7 +56,7 @@ namespace JAA.Structure.Factory
 				Register(reader);
 		}
 		
-		private void Register(ISavedProgressReader reader)
+		public void Register(ISavedProgressReader reader)
 		{
 			if (reader is ISavedProgress progressWriter)
 				ProgressWriters.Add(progressWriter);
