@@ -1,7 +1,4 @@
-using JAA.Structure.Factory;
-using JAA.Services;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace CodeBase.Enemy
 {
@@ -10,33 +7,15 @@ namespace CodeBase.Enemy
         public float speed;
 
         private Transform _heroTransform;
-        private IGameFactory _gameFactory;
         private Vector3 _positionToLook;
-
-        private void Start()
-        {
-            _gameFactory = AllServices.Container.Single<IGameFactory>();
-
-            if (IsHeroExist())
-                InitializeHeroTransform();
-            else
-                _gameFactory.HeroCreated += HeroCreated;
-        }
 
         private void Update()
         {
             if (IsInitialized())
                 RotateTowardsHero();
         }
-
-        private void OnDestroy()
-        {
-            if(_gameFactory != null)
-                _gameFactory.HeroCreated -= HeroCreated;
-        }
-
-        private bool IsHeroExist() => 
-            _gameFactory.HeroObject != null;
+        public void Construct(Transform heroObjectTransform) => 
+            _heroTransform = heroObjectTransform;
 
         private void RotateTowardsHero()
         {
@@ -62,11 +41,5 @@ namespace CodeBase.Enemy
 
         private bool IsInitialized() => 
             _heroTransform != null;
-    
-        private void HeroCreated() =>
-            InitializeHeroTransform();
-
-        private void InitializeHeroTransform() =>
-            _heroTransform = _gameFactory.HeroObject.transform;
     }
 }

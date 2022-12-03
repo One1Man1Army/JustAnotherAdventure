@@ -4,6 +4,7 @@ using JAA.Services;
 using JAA.Services.Input;
 using JAA.Services.PersistentProgress;
 using JAA.Services.SaveLoad;
+using JAA.Structure.Services.StaticData;
 using UnityEngine;
 
 namespace JAA.Structure.StateMachine
@@ -45,8 +46,16 @@ namespace JAA.Structure.StateMachine
 			_services.RegisterSingle<IInputService>(InputService());
 			_services.RegisterSingle<IAssetProvider>(new AssetProvider());
 			_services.RegisterSingle<IPersistentProgressService>(new PersistentProgressService());
-			_services.RegisterSingle<IGameFactory>(new GameFactory(_services.Single<IAssetProvider>()));
+			RegisterStaticDataService();
+			_services.RegisterSingle<IGameFactory>(new GameFactory(_services.Single<IAssetProvider>(), _services.Single<IStaticDataService>()));
 			_services.RegisterSingle<ISaveLoadService>(new SaveLoadService(_services.Single<IPersistentProgressService>(), _services.Single<IGameFactory>()));
+		}
+
+		private void RegisterStaticDataService()
+		{
+			var staticData = new StaticDataService();
+			staticData.LoadMonsters();
+			_services.RegisterSingle<IStaticDataService>(staticData);
 		}
 
 		private static IInputService InputService()

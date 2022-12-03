@@ -1,6 +1,7 @@
 using System;
 using JAA.Enemies;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Enemies
 {
@@ -12,7 +13,7 @@ namespace Enemies
 		[SerializeField] private GameObject _deathFX;
 		[SerializeField] private Attack _attack;
 		[SerializeField] private Follow _follow;
-		
+
 		public event Action DeathHappened;
 
 		private void Start() => 
@@ -31,6 +32,7 @@ namespace Enemies
 			SpawnDeathFX();
 			_attack.SwitchAttack(false);
 			_follow.enabled = false;
+			GetComponent<NavMeshAgent>().enabled = false;
 			DeathHappened?.Invoke();
 			Invoke(nameof(DelayedDestroy), 3f);
 		}
