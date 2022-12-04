@@ -1,5 +1,6 @@
 using JAA.Data;
 using JAA.Structure.Factory;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -34,8 +35,15 @@ namespace JAA.Enemies
 			var loot = _factory.CreateLoot();
 			loot.transform.position = transform.position;
 
+			var lootItem = GenerateLoot();
+			loot.Initialize(lootItem);
+		}
+
+		private Loot GenerateLoot()
+		{
 			var lootItem = new Loot();
 			lootItem.value = Random.Range(_lootMin, _lootMax);
+			return lootItem;
 		}
 	}
 }

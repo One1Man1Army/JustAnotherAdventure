@@ -47,7 +47,7 @@ namespace JAA.Structure.StateMachine
 			_services.RegisterSingle<IAssetProvider>(new AssetProvider());
 			_services.RegisterSingle<IPersistentProgressService>(new PersistentProgressService());
 			RegisterStaticDataService();
-			_services.RegisterSingle<IGameFactory>(new GameFactory(_services.Single<IAssetProvider>(), _services.Single<IStaticDataService>()));
+			_services.RegisterSingle<IGameFactory>(new GameFactory(_services.Single<IAssetProvider>(), _services.Single<IStaticDataService>(), _services.Single<IPersistentProgressService>()));
 			_services.RegisterSingle<ISaveLoadService>(new SaveLoadService(_services.Single<IPersistentProgressService>(), _services.Single<IGameFactory>()));
 		}
 

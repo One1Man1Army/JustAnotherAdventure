@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using JAA.Enemies;
 using JAA.Services;
 using JAA.Services.PersistentProgress;
 using JAA.Structure.StaticData;
@@ -16,6 +17,6 @@ namespace JAA.Structure.Factory
 		void CleanUp();
 		void Register(ISavedProgressReader reader);
 		GameObject CreateMonster(MonsterTypeID monsterTypeID, Transform parent);
-		GameObject CreateLoot();
+		LootPiece CreateLoot();
 	}
 }

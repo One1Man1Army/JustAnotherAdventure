@@ -16,14 +16,16 @@ namespace JAA.Structure.Factory
 	{
 		private readonly IAssetProvider _assets;
 		private readonly IStaticDataService _staticData;
+		private readonly IPersistentProgressService _progressService;
 
 		public List<ISavedProgressReader> ProgressReaders { get; } = new List<ISavedProgressReader>();
 		public List<ISavedProgress> ProgressWriters { get; } = new List<ISavedProgress>();
 
-		public GameFactory(IAssetProvider assets, IStaticDataService staticData)
+		public GameFactory(IAssetProvider assets, IStaticDataService staticData, IPersistentProgressService progressService)
 		{
 			_assets = assets;
 			_staticData = staticData;
+			_progressService = progressService;
 		}
 		public GameObject CreateHero(GameObject initialPoint)
 		{
@@ -33,11 +35,21 @@ namespace JAA.Structure.Factory
 
 		private GameObject HeroObject { get;  set; }
 
-		public GameObject CreateHud() => 
-			InstantiateRegistered(AssetPath.HudPath);
+		public GameObject CreateHud()
+		{
+			var hud = InstantiateRegistered(AssetPath.HudPath);
+			
+			hud.GetComponentInChildren<LootCounter>().Construct(_progressService.progress.worldData);
+			
+			return hud;
+		}
 
-		public GameObject CreateLoot() => 
-			InstantiateRegistered(AssetPath.LootPath);
+		public LootPiece CreateLoot()
+		{
+			var lootPiece = InstantiateRegistered(AssetPath.LootPath).GetComponent<LootPiece>();
+			lootPiece.Construct(_progressService.progress.worldData);
+			return lootPiece;
+		}
 
 		public GameObject CreateMonster(MonsterTypeID monsterTypeID, Transform parent)
 		{
