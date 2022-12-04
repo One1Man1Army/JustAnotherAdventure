@@ -2,7 +2,7 @@ using JAA.Data;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace CodeBase.Enemy
+namespace JAA.Enemies
 {
   public class AgentMoveToPlayer : Follow
   {

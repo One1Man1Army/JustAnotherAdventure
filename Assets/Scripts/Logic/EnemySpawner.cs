@@ -1,8 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Enemies;
 using JAA.Data;
+using JAA.Enemies;
 using JAA.Services;
 using JAA.Services.PersistentProgress;
 using JAA.Structure.Factory;

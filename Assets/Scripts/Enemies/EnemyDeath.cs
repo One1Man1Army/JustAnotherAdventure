@@ -1,9 +1,8 @@
 using System;
-using JAA.Enemies;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Enemies
+namespace JAA.Enemies
 {
 	[RequireComponent(typeof(EnemyHealth), typeof(EnemyAnimator))]
 	public class EnemyDeath : MonoBehaviour

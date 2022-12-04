@@ -6,6 +6,7 @@ namespace JAA.Data
 	public class WorldData
 	{
 		public PositionOnLevel positionOnLevel;
+		public LootData lootData;
 
 		public WorldData(string initialLevel)
 		{

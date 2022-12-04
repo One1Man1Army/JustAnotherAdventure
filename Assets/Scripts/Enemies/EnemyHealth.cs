@@ -2,7 +2,6 @@ using System;
 using JAA.Logic;
 using UnityEngine;
 
-
 namespace JAA.Enemies
 {
 	[RequireComponent(typeof(EnemyAnimator))]

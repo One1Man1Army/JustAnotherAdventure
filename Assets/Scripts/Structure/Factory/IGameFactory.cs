@@ -16,5 +16,6 @@ namespace JAA.Structure.Factory
 		void CleanUp();
 		void Register(ISavedProgressReader reader);
 		GameObject CreateMonster(MonsterTypeID monsterTypeID, Transform parent);
+		GameObject CreateLoot();
 	}
 }

@@ -6,6 +6,9 @@ namespace JAA.Structure.StaticData
 	public class MonsterStaticData : ScriptableObject
 	{
 		public MonsterTypeID monsterTypeID;
+
+		public int minLoot;
+		public int maxLoot;
 		
 		[Range(1, 100)]
 		public int hp;

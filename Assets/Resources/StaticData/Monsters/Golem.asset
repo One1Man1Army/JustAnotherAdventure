@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 797ddfa1700a406184920e20b8f33c48, type: 3}
   m_Name: Golem
   m_EditorClassIdentifier: 
-  monsterTypeID: 0
+  monsterTypeID: 10
   hp: 15
   damage: 15
   effectiveDistance: 0.6

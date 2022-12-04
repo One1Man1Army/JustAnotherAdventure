@@ -2,7 +2,7 @@ using System;
 using JAA.Enemies;
 using UnityEngine;
 
-namespace Enemies
+namespace JAA.Enemies
 {
 	[RequireComponent(typeof(Attack))]
 	public class CheckAttackRange : MonoBehaviour

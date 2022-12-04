@@ -1,5 +1,3 @@
-using System;
-using CodeBase.Enemy;
 using UnityEngine;
 
 namespace JAA.Enemies

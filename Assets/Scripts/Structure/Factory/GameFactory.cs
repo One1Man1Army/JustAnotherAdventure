@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using CodeBase.Enemy;
 using JAA.Enemies;
 using JAA.Logic;
 using JAA.Services.PersistentProgress;
@@ -38,39 +36,8 @@ namespace JAA.Structure.Factory
 		public GameObject CreateHud() => 
 			InstantiateRegistered(AssetPath.HudPath);
 
-		public void CleanUp()
-		{
-			ProgressReaders.Clear();
-			ProgressWriters.Clear();
-		}
-
-		private GameObject InstantiateRegistered(string prefabPath, Vector3 position)
-		{
-			var gameObject = _assets.Instantiate(prefabPath, position);
-			RegisterProgressWatchers(gameObject);
-			return gameObject;
-		}
-		
-		private GameObject InstantiateRegistered(string prefabPath)
-		{
-			var gameObject = _assets.Instantiate(prefabPath);
-			RegisterProgressWatchers(gameObject);
-			return gameObject;
-		}
-		
-		private void RegisterProgressWatchers(GameObject gameObject)
-		{
-			foreach (var reader in gameObject.GetComponentsInChildren<ISavedProgressReader>())
-				Register(reader);
-		}
-		
-		public void Register(ISavedProgressReader reader)
-		{
-			if (reader is ISavedProgress progressWriter)
-				ProgressWriters.Add(progressWriter);
-				
-			ProgressReaders.Add(reader);
-		}
+		public GameObject CreateLoot() => 
+			InstantiateRegistered(AssetPath.LootPath);
 
 		public GameObject CreateMonster(MonsterTypeID monsterTypeID, Transform parent)
 		{
@@ -85,6 +52,10 @@ namespace JAA.Structure.Factory
 			monster.GetComponent<AgentMoveToPlayer>().Construct(HeroObject.transform);
 			monster.GetComponent<NavMeshAgent>().speed = monsterData.moveSpeed;
 			monster.GetComponent<RotateToHero>()?.Construct(HeroObject.transform);
+			
+			var lootSpawner = monster.GetComponentInChildren<LootSpawner>();
+			lootSpawner.Construct(this);
+			lootSpawner.SetLoot(monsterData.minLoot, monsterData.maxLoot);
 
 			var attack = monster.GetComponent<Attack>();
 			attack.Construct(HeroObject.transform);
@@ -94,6 +65,40 @@ namespace JAA.Structure.Factory
 			attack.attackCooldown = monsterData.attackCooldown;
 
 			return monster;
+		}
+
+		public void CleanUp()
+		{
+			ProgressReaders.Clear();
+			ProgressWriters.Clear();
+		}
+
+		private GameObject InstantiateRegistered(string prefabPath, Vector3 position)
+		{
+			var gameObject = _assets.Instantiate(prefabPath, position);
+			RegisterProgressWatchers(gameObject);
+			return gameObject;
+		}
+
+		private GameObject InstantiateRegistered(string prefabPath)
+		{
+			var gameObject = _assets.Instantiate(prefabPath);
+			RegisterProgressWatchers(gameObject);
+			return gameObject;
+		}
+
+		private void RegisterProgressWatchers(GameObject gameObject)
+		{
+			foreach (var reader in gameObject.GetComponentsInChildren<ISavedProgressReader>())
+				Register(reader);
+		}
+
+		public void Register(ISavedProgressReader reader)
+		{
+			if (reader is ISavedProgress progressWriter)
+				ProgressWriters.Add(progressWriter);
+				
+			ProgressReaders.Add(reader);
 		}
 	}
 }
